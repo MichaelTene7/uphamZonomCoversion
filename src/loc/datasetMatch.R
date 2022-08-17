@@ -19,7 +19,7 @@ zonomNames
 zonomNamesUs = gsub(" ", "_", zonomNames)
 zonomNamesUs
 #Add the upham names to the zonom Data
-zonomData %>%
+zonomData = zonomData %>%
   mutate(uphamName = gsub(" ", "_",zonomData$V3)
   )
 
